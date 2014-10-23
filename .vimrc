@@ -3,13 +3,12 @@
 "--------------------------
 set nocompatible
 set t_Co=256
-"colorscheme wombat
 colorscheme hybrid
 syntax on
 au BufRead,BufNewFile *.wl  set filetype=wl
-" 新しいウィンドウを下に開く
+"sp in right side
 set splitbelow
-" 新しいウィンドウを右に開く
+"vs in right side
 set splitright
 "行数を表示
 set number
@@ -23,25 +22,34 @@ set hlsearch
 "--------------------------
 " Keyboard Setting
 "--------------------------
-"deleteキーを使えるようにする
 set backspace=start,eol,indent
+
+"emacs-like key bind
+imap <silent> <C-P> <Up>
+imap <silent> <C-N> <Down>
+imap <silent> <C-B> <Left>
+imap <silent> <C-F> <Right>
+imap <silent> <C-A> <Home>
+imap <silent> <C-E> <End>
+imap <silent> <C-D> <Del>
+imap <silent> <C-K> <C-O>
+imap <silent> <C-Y> <C-R>
 "--------------------------
 " File system Setting
 "--------------------------
-"バックアップをとらない
+"don not make buckup file
 set nobackup
-"スワップファイルを保存しない
+"don not make swap file
 set noswapfile
 "--------------------------
 " Tab Setting
 "--------------------------
-"タブの間隔
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-"タブの移動
+"tab swiching
 nnoremap <S-Tab>   gt
 nnoremap <C-S-Tab>   gT
 "--------------------------
@@ -49,8 +57,8 @@ nnoremap <C-S-Tab>   gT
 "--------------------------
 "autocmd FileType html :compiler tidy
 "autocmd FileType html :setlocal makeprg=tidy\ -raw\ -quiet\ -errors\ --gnu-emacs\ yes\ \"%\"
-set autoindent
-set smartindent
+"set autoindent
+"set smartindent
 "--------------------------
 " Languege Setting
 " -------------------------
@@ -59,7 +67,7 @@ set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp
 set fenc=utf-8
 set enc=utf-8
-" ツールバーを英語で表示
+"tool bar in English
 set fencs=utf-8,iso-2022-jp,euc-jp,cp932
 
 "--------------------------
@@ -68,13 +76,9 @@ set fencs=utf-8,iso-2022-jp,euc-jp,cp932
 set guioptions+=a
 set clipboard+=autoselect,unnamed
 "--------------------------
-"補完プラグイン"
+"auto-complete"
 "-------------------------
 "let g:neocomplcache_enable_at_startup = 1
 
-"-------------------------
-"Setting QuickRun
-"-------------------------
-set splitright "新しいウィンドウを右に開く
 
-"-------------------------
+
