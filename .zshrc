@@ -153,11 +153,6 @@ export CLASSPATH=/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH
 # Antlr3
 export CLASSPATH=/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH
 
-# cuda
-export PATH=/usr/local/cuda/bin:$PATH
-export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
-#export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-6.0/lib/:$DYLD_LIBRARY_PATH
-
 # opencv
 export PYTHONPATH=/usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages:$PYTHONPATH
 

@@ -4,6 +4,7 @@
 set nocompatible
 set t_Co=256
 colorscheme hybrid
+"colorscheme jellybeans
 syntax on
 au BufRead,BufNewFile *.wl  set filetype=wl
 "sp in right side
