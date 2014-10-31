@@ -1,6 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/vagrant/dev/git/production/app/views/tb/static_pages'
-let g:netrw_dirhist_2='/home/vagrant/dev/git/production/app/views/tb'
-let g:netrw_dirhist_3='/home/vagrant/dev/git/production/app/views/tb/shared'
-let g:netrw_dirhist_4='/Users/nikaido/.vim'
+let g:netrw_dirhist_cnt =0

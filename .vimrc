@@ -6,12 +6,20 @@ set t_Co=256
 colorscheme hybrid
 syntax on
 au BufRead,BufNewFile *.wl  set filetype=wl
+
 "sp in right side
 set splitbelow
+
 "vs in right side
 set splitright
-"行数を表示
+
+" show line number
 set number
+
+" show cursorline
+set cursorline
+set cursorcolumn
+
 "--------------------------
 " Search Setting
 "--------------------------
@@ -19,6 +27,7 @@ set ignorecase
 set smartcase
 set wrapscan
 set hlsearch
+
 "--------------------------
 " Keyboard Setting
 "--------------------------
@@ -34,6 +43,7 @@ imap <silent> <C-E> <End>
 imap <silent> <C-D> <Del>
 imap <silent> <C-K> <C-O>
 imap <silent> <C-Y> <C-R>
+
 "--------------------------
 " File system Setting
 "--------------------------
@@ -41,6 +51,7 @@ imap <silent> <C-Y> <C-R>
 set nobackup
 "don not make swap file
 set noswapfile
+
 "--------------------------
 " Tab Setting
 "--------------------------
@@ -52,6 +63,7 @@ set tabstop=2
 "tab swiching
 nnoremap <S-Tab>   gt
 nnoremap <C-S-Tab>   gT
+
 "--------------------------
 " Indent Setting
 "--------------------------
@@ -59,6 +71,7 @@ nnoremap <C-S-Tab>   gT
 "autocmd FileType html :setlocal makeprg=tidy\ -raw\ -quiet\ -errors\ --gnu-emacs\ yes\ \"%\"
 "set autoindent
 "set smartindent
+
 "--------------------------
 " Languege Setting
 " -------------------------
@@ -75,6 +88,7 @@ set fencs=utf-8,iso-2022-jp,euc-jp,cp932
 "--------------------------
 set guioptions+=a
 set clipboard+=autoselect,unnamed
+
 "--------------------------
 "auto-complete"
 "-------------------------
