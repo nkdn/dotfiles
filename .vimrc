@@ -96,4 +96,11 @@ set clipboard+=autoselect,unnamed
 "let g:neocomplcache_enable_at_startup = 1
 
 
-
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+Bundle 'slim-template/vim-slim.git'
+filetype plugin indent on
