@@ -131,17 +131,12 @@ noremap <C-P> :Unite -buffer-name=file file<CR>
 noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
 
 " " ウィンドウを分割して開く
-" au FileType unite nnoremap <silent> <buffer> <expr> <C-J>
-
-" unite#do_action('split')
-" au FileType unite inoremap <silent> <buffer> <expr> <C-J>
-" unite#do_action('split')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
+au FileType unite inoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
 
 " " ウィンドウを縦に分割して開く
-" au FileType unite nnoremap <silent> <buffer> <expr> <C-K>
-" unite#do_action('vsplit')
-" au FileType unite inoremap <silent> <buffer> <expr> <C-K>
-" unite#do_action('vsplit')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
+au FileType unite inoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
 
 " " ESCキーを2回押すと終了する
 au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
