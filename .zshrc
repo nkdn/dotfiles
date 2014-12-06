@@ -156,6 +156,9 @@ export CLASSPATH=/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH
 # opencv
 export PYTHONPATH=/usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages:$PYTHONPATH
 
+# tex
+PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
+
 # Proxy
 #-------------------------------------------------
 #waseda
