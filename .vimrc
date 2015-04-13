@@ -26,7 +26,6 @@ set cursorcolumn
 "-------------------------
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
-Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
 Bundle 'thinca/vim-quickrun'
@@ -34,6 +33,9 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'slim-template/vim-slim.git'
 " display files in tree
 Bundle 'scrooloose/nerdtree'
+
+
+Bundle 'Shougo/neocomplcache'
 filetype plugin indent on
 
 
