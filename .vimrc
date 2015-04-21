@@ -25,6 +25,7 @@ set cursorcolumn
 " Bundle 
 "-------------------------
 set rtp+=~/.vim/vundle.git/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
@@ -148,9 +149,9 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 """"""""""""""""""""""""""""""
 " automatically complement (), {}, []
 " """"""""""""""""""""""""""""""
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
+"imap { {}<LEFT>
+"imap [ []<LEFT>
+"imap ( ()<LEFT>
 " """"""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""
