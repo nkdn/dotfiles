@@ -118,26 +118,25 @@ export PATH=$PATH:/Developer/Simulator/GHDL/bin:/Developer/Simulator/GTKwave/bin
 #mysql
 export PATH=$PATH:/usr/local/mysql/bin
 
-# MacPorts Installer addition on 2012-10-11_at_04:18:37: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 #carch
 export PATH=/Users/nikaido/work/carch/bin:$PATH
 
 # Haskell
 export PATH=$HOME/Library/Haskell/bin:$PATH
+
 # nodejs
-#export PATH=$HOME/usr/local/share/npm/bin:$PATH
-#export PATH=~/node_modules/typescript/bin:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
+export NODE_PATH=/usr/local/lib/node_modules
+NPM_PATH=/usr/local/bin/npm
+export PATH=/usr/local/bin:~/bin:$NPM_PATH:$NODE_PATH:$PATH
 
 # Python
-#export PYTHONSTARTUP=$HOME/.pythonrc.py
-#PYTHONPATH=~/Library/Python/debug_toolbar:$PYTHONPATH
-#export PYTHONPATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Ruby
-#export PATH=$HOME/.rbenv/bin:$PATH
-#eval "$(rbenv init - zsh)"
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init - zsh)"
 
 # Java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
@@ -148,22 +147,14 @@ export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 # MongoDB
 export PATH=/usr/local/Cellar/mongodb/2.2.0-x86_64/bin:$PATH
 
-# Antlr4
-export CLASSPATH=/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH
-# Antlr3
-export CLASSPATH=/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH
-
 # opencv
 export PYTHONPATH=/usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages:$PYTHONPATH
 
 # tex
 PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
 
-# Proxy
-#-------------------------------------------------
-#waseda
-# export http_proxy=www-proxy.waseda.jp:8080
-# export ALL_PROXY=$http_proxy
+# android
+export PATH=$PATH:~/Library/Android/sdk/build-tools/22.0.1
 
 #-------------------------------------------------
 # Other Setting
@@ -171,10 +162,6 @@ PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
 ### Aliases ###
 alias ls='ls -a'
 alias finda='open .'
-# alias emacs='open -a Emacs'
-alias mongod='mongod --config /usr/local/mongo/conf/'
-alias grun='java org.antlr.v4.runtime.misc.TestRig'
-
 alias ls='ls -aF'
 alias ll='ls -l'
 alias rm='rm -i'
@@ -182,12 +169,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd -'
-alias cot='open -a CotEditor'
  
-#Aliases --JAVA
-#alias javac='javac -encoding UTF-8'
-#alias java='java -Dfile.encoding=UTF-8'
-
 # M-f, M-b
 autoload -Uz select-word-style
 select-word-style default
@@ -197,8 +179,8 @@ fpath=( ~/.home/zsh $fpath )
 autoload -Uz tcsh-forward-word-match
 zle -N forward-word tcsh-forward-word-match
 
-# create emacs env file
-#perl -wle \
-#    'do { print qq/(setenv "$_" "$ENV{$_}")/ if exists $ENV{$_} } for @ARGV' \
-#    PATH > ~/.emacs.d/elisp/shellenv.el
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/hnikaido/google-cloud-sdk/path.zsh.inc'
 
+# The next line enables shell command completion for gcloud.
+source '/Users/hnikaido/google-cloud-sdk/completion.zsh.inc'
