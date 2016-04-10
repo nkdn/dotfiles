@@ -104,7 +104,7 @@ esac
 # Path
 #-------------------------------------------------
 
-PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 #MANPATH
 MANPATH=/opt/local/man:$MANPATH
@@ -151,7 +151,7 @@ export PATH=/usr/local/Cellar/mongodb/2.2.0-x86_64/bin:$PATH
 export PYTHONPATH=/usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages:$PYTHONPATH
 
 # tex
-PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
+# export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
 
 # android
 export PATH=$PATH:~/Library/Android/sdk/build-tools/22.0.1
@@ -180,7 +180,7 @@ autoload -Uz tcsh-forward-word-match
 zle -N forward-word tcsh-forward-word-match
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/hnikaido/google-cloud-sdk/path.zsh.inc'
+source $HOME/google-cloud-sdk/path.zsh.inc
 
 # The next line enables shell command completion for gcloud.
-source '/Users/hnikaido/google-cloud-sdk/completion.zsh.inc'
+source $HOME/google-cloud-sdk/completion.zsh.inc
