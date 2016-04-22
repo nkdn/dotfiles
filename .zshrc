@@ -128,14 +128,14 @@ NPM_PATH=/usr/local/bin/npm
 export PATH=/usr/local/bin:~/bin:$NPM_PATH:$NODE_PATH:$PATH
 
 # Python
-if [ -e "{$HOME}/.pyenv" ]; then
+if [ -e "$HOME/.pyenv" ]; then
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 fi
 
 # Ruby
-if [ -e "{$HOME}/.rbenv" ]; then
+if [ -e "$HOME/.rbenv" ]; then
   export PATH=$HOME/.rbenv/bin:$PATH
   eval "$(rbenv init - zsh)"
 fi
@@ -161,7 +161,7 @@ export PATH=$PATH:~/Library/Android/sdk/build-tools/22.0.1
 #-------------------------------------------------
 # Google Cloud SDK
 #-------------------------------------------------
-if [ -e "{$HOME}/google-cloud-sdk" ]; then
+if [ -e "$HOME/google-cloud-sdk" ]; then
   # The next line updates PATH for the Google Cloud SDK.
   source $HOME/google-cloud-sdk/path.zsh.inc
   # The next line enables shell command completion for gcloud.
