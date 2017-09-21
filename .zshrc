@@ -39,8 +39,8 @@ unsetopt caseglob    # ファイルグロブで大文字小文字を区別しな
 
 ### History ###
 HISTFILE=~/.zsh_history   # ヒストリを保存するファイル
-HISTSIZE=10000            # メモリに保存されるヒストリの件数
-SAVEHIST=10000            # 保存されるヒストリの件数
+HISTSIZE=100000            # メモリに保存されるヒストリの件数
+SAVEHIST=100000            # 保存されるヒストリの件数
 setopt bang_hist          # !を使ったヒストリ展開を行う(d)
 setopt extended_history   # ヒストリに実行時間も保存する
 setopt hist_ignore_dups   # 直前と同じコマンドはヒストリに追加しない
@@ -85,11 +85,18 @@ PROMPT='%F{10}%n:%F{12}%4(~,%-1~/.../%1~,%~)%f
 #%0(?.%#.%F{9}%#%f) '
 RPROMPT='%*'
  
-
 # SSHログイン時のプロンプト
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
   PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
 ;
+
+SSH_AGENT_FILE="$HOME/.ssh-agent-info"
+test -f $SSH_AGENT_FILE && source $SSH_AGENT_FILE
+if ! ssh-add -l >& /dev/null ; then
+  ssh-agent > $SSH_AGENT_FILE
+  source $SSH_AGENT_FILE
+  ssh-add
+fi
 
 ### Title (user@hostname) ###
 case $TERM in
@@ -102,25 +109,8 @@ esac
 # Path
 #-------------------------------------------------
 
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-#MANPATH
-MANPATH=/opt/local/man:$MANPATH
-
 # brew
 export PATH=/usr/local/bin:$PATH
-
-#VHDL
-export PATH=$PATH:/Developer/Simulator/GHDL/bin:/Developer/Simulator/GTKwave/bin
-
-#mysql
-export PATH=$PATH:/usr/local/mysql/bin
-
-#carch
-export PATH=/Users/nikaido/work/carch/bin:$PATH
-
-# Haskell
-export PATH=$HOME/Library/Haskell/bin:$PATH
 
 # nodejs
 export NODE_PATH=/usr/local/lib/node_modules
@@ -143,45 +133,28 @@ fi
 # Java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
-# Postgres
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
-
-# MongoDB
-export PATH=/usr/local/Cellar/mongodb/2.2.0-x86_64/bin:$PATH
-
-# opencv
-export PYTHONPATH=/usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages:$PYTHONPATH
-
-# tex
-# export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
-
 # android
-export PATH=$PATH:~/Library/Android/sdk/build-tools/22.0.1
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
-#-------------------------------------------------
-# Google Cloud SDK
-#-------------------------------------------------
-if [ -e "$HOME/google-cloud-sdk" ]; then
-  # The next line updates PATH for the Google Cloud SDK.
-  source $HOME/google-cloud-sdk/path.zsh.inc
-  # The next line enables shell command completion for gcloud.
-  source $HOME/google-cloud-sdk/completion.zsh.inc
-fi
+# dinghy
+export DOCKER_HOST=tcp://192.168.99.100:2376
+export DOCKER_CERT_PATH=$HOME/.docker/machine/machines/dinghy
+export DOCKER_TLS_VERIFY=1
+export DOCKER_MACHINE_NAME=dinghy
 
 #-------------------------------------------------
 # Other Setting
 #-------------------------------------------------
 ### Aliases ###
-alias ls='ls -a'
+# alias ls='ls -a'
 alias finda='open .'
-alias ls='ls -aF'
 alias ll='ls -l'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd -'
- 
+
 # M-f, M-b
 autoload -Uz select-word-style
 select-word-style default
@@ -190,4 +163,3 @@ zstyle ':zle:*' word-chars '*?_-.[]~='
 fpath=( ~/.home/zsh $fpath )
 autoload -Uz tcsh-forward-word-match
 zle -N forward-word tcsh-forward-word-match
-

@@ -15,7 +15,7 @@ set splitbelow
 set splitright
 
 " show line number
-set number
+" set number
 
 " show cursorline
 set cursorline
@@ -153,6 +153,12 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 "imap [ []<LEFT>
 "imap ( ()<LEFT>
 " """"""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" コメントの自動補完無効
+" """"""""""""""""""""""""""""""
+autocmd FileType * setlocal formatoptions-=ro
+
 
 """"""""""""""""""""""""""""""
 " 全角スペースの表示
