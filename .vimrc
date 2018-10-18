@@ -17,9 +17,9 @@ set splitright
 " show line number
 " set number
 
-" show cursorline
-set cursorline
-set cursorcolumn
+" " show cursorline
+" set cursorline
+" set cursorcolumn
 
 "-------------------------
 " Bundle 
@@ -27,9 +27,9 @@ set cursorcolumn
 set rtp+=~/.vim/vundle.git/
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'Shougo/unite.vim'
-Bundle 'thinca/vim-ref'
-Bundle 'thinca/vim-quickrun'
+" Bundle 'Shougo/unite.vim'
+" Bundle 'thinca/vim-ref'
+" Bundle 'thinca/vim-quickrun'
 " slim-mode
 Bundle 'slim-template/vim-slim.git'
 " display files in tree

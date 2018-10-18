@@ -4,10 +4,6 @@
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
 
-#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
-#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
-alias emacs='$(brew --prefix emacs)/Emacs.app/Contents/MacOS/Emacs'
-
 # command history search
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
@@ -81,11 +77,15 @@ autoload -U colors; colors
 
 PROMPT='%F{10}%n:%F{12}%4(~,%-1~/.../%1~,%~)%f
 %0(?.%#.%F{9}%#%f) '
+
 #PROMPT='%F{10}%n@%m%f:%F{12}%4(~,%-1~/.../%1~,%~)%f
 #%0(?.%#.%F{9}%#%f) '
+
 RPROMPT='%*'
  
-# SSHログイン時のプロンプト
+#-------------------------------------------------
+# SSH Prompt
+#-------------------------------------------------
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
   PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
 ;
@@ -111,11 +111,11 @@ esac
 
 # brew
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
-# nodejs
-export NODE_PATH=/usr/local/lib/node_modules
-NPM_PATH=/usr/local/bin/npm
-export PATH=/usr/local/bin:~/bin:$NPM_PATH:$NODE_PATH:$PATH
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export NODEBREW_ROOT=$HOME/.nodebrew
 
 # Python
 if [ -e "$HOME/.pyenv" ]; then
@@ -143,6 +143,13 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
 
 #-------------------------------------------------
+# Emacs
+#-------------------------------------------------
+#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+#alias emacs='$(brew --prefix emacs)/Emacs.app/Contents/MacOS/Emacs'
+
+#-------------------------------------------------
 # Other Setting
 #-------------------------------------------------
 ### Aliases ###
@@ -163,3 +170,8 @@ zstyle ':zle:*' word-chars '*?_-.[]~='
 fpath=( ~/.home/zsh $fpath )
 autoload -Uz tcsh-forward-word-match
 zle -N forward-word tcsh-forward-word-match
+
+
+
+
+
