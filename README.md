@@ -21,16 +21,22 @@ xcode-select --install
 brew doctor
 ```
 
+### git clone
+
+```bash
+git clone git@github.com:nkdn/dotfiles.git ~/.dotfiles
+```
+
 ### ssh
 
 ```bash
+cd ~/.dotfiles
 ./ssh.sh
 ```
 
 ### .zshrc & .vimrc
 
 ```bash
-git clone git@github.com:nkdn/dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 source ~/.zshrc
@@ -39,6 +45,7 @@ source ~/.zshrc
 ### macOS defaults
 
 ```bash
+cd ~/.dotfiles
 ./macos.sh
 ```
 
@@ -56,12 +63,14 @@ cp ~/.dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 ### brew cask
 
 ```bash
+cd ~/.dotfiles
 ./brew-cask.sh
 ```
 
 ### brew
 
 ```bash
+cd ~/.dotfiles
 ./brew.sh
 ```
 
