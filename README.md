@@ -24,7 +24,7 @@ brew doctor
 ### git clone
 
 ```bash
-git clone git@github.com:nkdn/dotfiles.git ~/.dotfiles
+git clone https://github.com/nkdn/dotfiles.git ~/.dotfiles
 ```
 
 ### ssh
