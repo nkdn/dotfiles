@@ -1,5 +1,3 @@
-## nkdn dotfiles
-
 ## setup macOS
 
 ### switch to zsh
