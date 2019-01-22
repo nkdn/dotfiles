@@ -143,13 +143,6 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
 
 #-------------------------------------------------
-# Emacs
-#-------------------------------------------------
-#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
-#alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
-#alias emacs='$(brew --prefix emacs)/Emacs.app/Contents/MacOS/Emacs'
-
-#-------------------------------------------------
 # Other Setting
 #-------------------------------------------------
 ### Aliases ###
