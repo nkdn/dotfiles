@@ -27,6 +27,14 @@ brew doctor
 git clone https://github.com/nkdn/dotfiles.git ~/.dotfiles
 ```
 
+### git
+
+```bash
+chmod 755 ~/.dotfiles/git.sh
+~/.dotfiles/git.sh
+```
+
+
 ### ssh
 
 ```bash
