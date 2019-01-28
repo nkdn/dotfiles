@@ -16,6 +16,7 @@ brew cask install atom
 brew cask install visual-studio-code
 brew cask install android-studio
 brew cask install rubymine
+brew cask install java8
 
 brew cask install sketch
 brew cask install sketch-toolbox
