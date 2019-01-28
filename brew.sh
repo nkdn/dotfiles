@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 brew install openssl
 brew install hub nkf fontconfig sl
