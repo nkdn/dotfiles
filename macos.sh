@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # default write settings
 # ref. https://github.com/mathiasbynens/dotfiles/blob/master/.macos
