@@ -39,6 +39,7 @@ chmod 755 ~/.dotfiles/ssh.sh
 ```bash
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/.vim ~/.vim
 source ~/.zshrc
 ```
 

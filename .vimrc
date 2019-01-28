@@ -6,6 +6,7 @@ set t_Co=256
 colorscheme hybrid
 "colorscheme jellybeans
 syntax on
+filetype plugin indent on
 au BufRead,BufNewFile *.wl  set filetype=wl
 
 "sp in right side
@@ -20,25 +21,6 @@ set splitright
 " " show cursorline
 " set cursorline
 " set cursorcolumn
-
-"-------------------------
-" Bundle 
-"-------------------------
-set rtp+=~/.vim/vundle.git/
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" Bundle 'Shougo/unite.vim'
-" Bundle 'thinca/vim-ref'
-" Bundle 'thinca/vim-quickrun'
-" slim-mode
-Bundle 'slim-template/vim-slim.git'
-" display files in tree
-Bundle 'scrooloose/nerdtree'
-
-
-Bundle 'Shougo/neocomplcache'
-filetype plugin indent on
-
 
 "--------------------------
 " search Setting
