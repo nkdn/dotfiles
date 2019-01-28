@@ -15,7 +15,7 @@ brew cask install postman
 brew cask install atom
 brew cask install visual-studio-code
 brew cask install android-studio
-brew cask install ruby-mine
+brew cask install rubymine
 
 brew cask install sketch
 brew cask install sketch-toolbox
