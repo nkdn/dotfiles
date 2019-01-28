@@ -1,4 +1,5 @@
-# ssh
+#!/bin/zsh
+
 mkdir ~/.ssh
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ssh/id_rsa ~/.ssh/id_rsa
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ssh/id_rsa.pub ~/.ssh/id_rsa.pub
