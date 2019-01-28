@@ -16,11 +16,13 @@ brew cask install atom
 brew cask install visual-studio-code
 brew cask install android-studio
 brew cask install rubymine
-brew cask install java8
 
 brew cask install sketch
 brew cask install sketch-toolbox
 brew cask install zeplin
+
+brew tap caskroom/versions
+brew cask install java8
 
 brew cask install adobe-creative-cloud
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
