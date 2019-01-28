@@ -3,6 +3,7 @@
 brew install openssl
 brew install hub nkf fontconfig sl
 brew install git-secrets terraform
+brew install zlib
 
 # ruby
 brew install rbenv ruby-build
