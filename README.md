@@ -30,8 +30,8 @@ git clone https://github.com/nkdn/dotfiles.git ~/.dotfiles
 ### ssh
 
 ```bash
-cd ~/.dotfiles
-./ssh.sh
+chmod 755 ~/.dotfiles/ssh.sh
+~/.dotfiles/ssh.sh
 ```
 
 ### .zshrc & .vimrc
@@ -45,8 +45,8 @@ source ~/.zshrc
 ### macOS defaults
 
 ```bash
-cd ~/.dotfiles
-./macos.sh
+chmod 755 ~/.dotfiles/macos.sh
+~/.dotfiles/macos.sh
 ```
 
 ### karabiner-elements
@@ -63,15 +63,15 @@ cp ~/.dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 ### brew cask
 
 ```bash
-cd ~/.dotfiles
-./brew-cask.sh
+chmod 755 ~/.dotfiles/brew-cask.sh
+~/.dotfiles/brew-cask.sh
 ```
 
 ### brew
 
 ```bash
-cd ~/.dotfiles
-./brew.sh
+chmod 755 ~/.dotfiles/brew.sh
+~/.dotfiles/brew.sh
 ```
 
 ### docker
