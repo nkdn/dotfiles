@@ -3,7 +3,6 @@
 brew install openssl
 brew install hub nkf fontconfig sl
 brew install git-secrets terraform
-brew install zlib
 
 # ruby
 brew install rbenv ruby-build
@@ -24,7 +23,7 @@ nodebrew use stable
 
 # python
 brew install pyenv
-pyenv install 2.7
+CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7
 pyenv global 2.7
 pyenv rehash
 
@@ -34,4 +33,3 @@ pip install docker-compose
 
 # java
 brew tap caskroom/versions
-brew cask install java8
