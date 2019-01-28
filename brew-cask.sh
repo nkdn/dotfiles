@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 brew cask install google-japanese-ime
 
