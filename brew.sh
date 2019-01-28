@@ -10,9 +10,10 @@ rbenv install 2.3.0
 rbenv global 2.3.0
 rbenv rehash
 
-# # gem
-# gem install rubocop
-# gem install cocoapods
+# gem
+gem install bundler
+gem install cocoapods
+gem install rubocop
 
 # npm
 brew install nodebrew yarn
@@ -30,6 +31,3 @@ pyenv rehash
 # pip
 pip install awscli
 pip install docker-compose
-
-# java
-brew tap caskroom/versions
