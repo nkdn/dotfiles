@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-git config --global user.name "Hiroyuki Nikaido"
-git config --global user.email hiroyuki.nikaido@gmail.com
-
 git config --global color.ui true
 
 git config --global alias.st status
