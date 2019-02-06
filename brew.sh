@@ -42,6 +42,7 @@ brew install mas
 source ~/.zshrc
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
+mas install 409203825 # Numbers
 mas install 497799835 # Xcode
 
 source ~/.zshrc
