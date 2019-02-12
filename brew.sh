@@ -2,7 +2,7 @@
 
 brew install openssl
 brew install hub nkf fontconfig sl
-brew install git-secrets terraform
+brew install gpg2 git-secrets terraform pre-commit
 
 # ruby
 brew install rbenv ruby-build
