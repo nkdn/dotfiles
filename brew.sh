@@ -3,6 +3,9 @@
 brew install openssl
 brew install hub nkf fontconfig sl
 brew install gpg2 git-secrets terraform pre-commit
+brew install libxml2 libxslt libiconv 
+brew link --force libxml2 
+brew link --force libxslt
 
 # ruby
 brew install rbenv ruby-build
@@ -15,6 +18,7 @@ rbenv rehash
 gem install bundler
 gem install cocoapods
 gem install rubocop
+gem install nokogiri -- --use-system-libraries --with-iconv-dir="$(brew --prefix libiconv)" --with-xml2-config="$(brew --prefix libxml2)/bin/xml2-config" --with-xslt-config="$(brew --prefix libxslt)/bin/xslt-config"
 source ~/.zshrc
 
 # npm
