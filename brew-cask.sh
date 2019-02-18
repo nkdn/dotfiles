@@ -5,6 +5,7 @@ brew cask install google-japanese-ime
 brew cask install iterm2
 brew cask install bettertouchtool
 brew cask install sequel-pro
+brew cask install realm-browser
 brew cask install keybase
 brew cask install istat-menus
 
