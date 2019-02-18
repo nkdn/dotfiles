@@ -155,6 +155,12 @@ alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd -'
 
+if [[ -x `which colordiff` ]]; then
+  alias diff='colordiff'
+else
+  alias diff='diff'
+fi
+
 # M-f, M-b
 autoload -Uz select-word-style
 select-word-style default
