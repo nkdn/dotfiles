@@ -34,14 +34,6 @@ chmod 755 ~/.dotfiles/git.sh
 ~/.dotfiles/git.sh
 ```
 
-
-### ssh
-
-```bash
-chmod 755 ~/.dotfiles/ssh.sh
-~/.dotfiles/ssh.sh
-```
-
 ### .zshrc & .vimrc
 
 ```bash
@@ -64,7 +56,6 @@ required sudo
 
 ```bash
 brew cask install karabiner-elements
-mkdir -p ~/.config
 mkdir -p ~/.config/karabiner
 cp ~/.dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 ```
