@@ -3,10 +3,14 @@
 brew install openssl
 brew install hub nkf fontconfig sl watch
 brew install gpg2 git-secrets terraform pre-commit
-brew install libxml2 libxslt libiconv 
+brew install libxml2 libxslt libiconv libtool
 brew install colordiff
 brew link --force libxml2 
 brew link --force libxslt
+
+# docker
+brwe install docker
+source ~/.zshrc
 
 # ruby
 brew install rbenv ruby-build
