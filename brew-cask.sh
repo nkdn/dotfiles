@@ -22,6 +22,8 @@ brew cask install sketch
 brew cask install sketch-toolbox
 brew cask install zeplin
 
+brew cask install docker
+
 brew tap caskroom/versions
 brew cask install java8
 
