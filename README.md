@@ -73,19 +73,3 @@ chmod 755 ~/.dotfiles/brew-cask.sh
 chmod 755 ~/.dotfiles/brew.sh
 ~/.dotfiles/brew.sh
 ```
-
-### docker
-
-required kernel extension permission
-
-```bash
-brew cask install docker-toolbox
-```
-
-dinghy install is depended on docker-toolbox's installation
-
-```bash
-brew tap codekitchen/dinghy
-brew install dinghy
-dinghy create --provider virtualbox --disk 40000 --memory 4000 --cpus 2
-```
