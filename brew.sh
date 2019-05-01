@@ -1,10 +1,10 @@
 #!/bin/zsh
 
 brew install openssl
-brew install hub nkf fontconfig sl watch
-brew install gpg2 git-secrets terraform pre-commit
+brew install nkf fontconfig sl watch jq
 brew install libxml2 libxslt libiconv libtool
-brew install colordiff
+brew install hub colordiff git-secrets pre-commit
+brew install gpg2 terraform
 brew link --force libxml2 
 brew link --force libxslt
 
