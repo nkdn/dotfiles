@@ -7,7 +7,6 @@ brew cask install bettertouchtool
 brew cask install sequel-pro
 brew cask install realm-browser
 brew cask install keybase
-brew cask install istat-menus
 
 brew cask install google-chrome
 brew cask install slack
