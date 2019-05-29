@@ -2,11 +2,13 @@
 
 brew install openssl
 brew install nkf fontconfig sl watch jq
-brew install libxml2 libxslt libiconv libtool
 brew install hub colordiff git-secrets pre-commit
 brew install gpg2 terraform
+brew install libxml2 libxslt libiconv libtool
 brew link --force libxml2 
 brew link --force libxslt
+brew install gettext
+brew link --force gettext
 
 # docker
 brwe install docker
