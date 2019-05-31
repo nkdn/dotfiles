@@ -17,8 +17,8 @@ source ~/.zshrc
 # ruby
 brew install rbenv ruby-build
 source ~/.zshrc
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.4.6
+rbenv global 2.4.6
 rbenv rehash
 
 # gem
@@ -26,6 +26,7 @@ gem install bundler
 gem install cocoapods
 gem install rubocop
 gem install nokogiri -- --use-system-libraries --with-iconv-dir="$(brew --prefix libiconv)" --with-xml2-config="$(brew --prefix libxml2)/bin/xml2-config" --with-xslt-config="$(brew --prefix libxslt)/bin/xslt-config"
+gem install docker-sync
 source ~/.zshrc
 
 # npm
