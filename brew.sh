@@ -40,8 +40,8 @@ nodebrew use stable
 # python
 brew install pyenv
 source ~/.zshrc
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7
-pyenv global 2.7
+CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7.11
+pyenv global 2.7.11
 pyenv rehash
 
 # pip
