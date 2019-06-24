@@ -12,8 +12,8 @@ defaults write com.apple.ImageCapture disableHotPlug -bool NO
 
 # dock
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock springboard-columns -int 10
-defaults write com.apple.dock springboard-rows -int 10
+defaults write com.apple.dock springboard-columns -int 7
+defaults write com.apple.dock springboard-rows -int 7
 defaults write com.apple.dock ResetLaunchPad -bool TRUE
 defaults write com.apple.dock tilesize -int 55
 
