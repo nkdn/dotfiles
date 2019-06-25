@@ -10,6 +10,7 @@ brew link --force libxslt
 brew install gettext
 brew link --force gettext
 
+brew install awscli
 brew install terraform@0.11
 ln -s /usr/local/Cellar/terraform@0.11/0.11.14/bin/terraform /usr/local/bin
 
@@ -49,7 +50,6 @@ pyenv rehash
 
 # pip
 pip install awscli
-pip install docker-compose
 source ~/.zshrc
 
 # mac appstore
