@@ -26,5 +26,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# menu bar
+defaults write com.apple.menuextra.battery ShowPercent YES
+
 killall Dock
 killall Finder
+killall SystemUIServer
