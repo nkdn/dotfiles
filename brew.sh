@@ -3,7 +3,7 @@
 brew install openssl
 brew install nkf fontconfig sl watch jq fswatch
 brew install hub colordiff git-secrets pre-commit
-brew install gpg2 terraform
+brew install gpg2 terraform@0.11
 brew install libxml2 libxslt libiconv libtool
 brew link --force libxml2 
 brew link --force libxslt
