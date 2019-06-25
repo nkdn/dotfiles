@@ -48,10 +48,6 @@ CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7.11
 pyenv global 2.7.11
 pyenv rehash
 
-# pip
-pip install awscli
-source ~/.zshrc
-
 # mac appstore
 brew install mas
 source ~/.zshrc
