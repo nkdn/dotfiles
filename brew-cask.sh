@@ -23,8 +23,10 @@ brew cask install zeplin
 
 brew cask install docker
 
-brew tap caskroom/versions
-brew cask install java8
+# for android
+brew cask install adoptopenjdk8
+touch ~/.android/repositories.cfg
+brew cask install android-sdk
 
 brew cask install adobe-creative-cloud
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
