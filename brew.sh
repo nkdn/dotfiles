@@ -3,12 +3,16 @@
 brew install openssl
 brew install nkf fontconfig sl watch jq fswatch
 brew install hub colordiff git-secrets pre-commit
-brew install gpg2 terraform
+brew install gpg2
 brew install libxml2 libxslt libiconv libtool
 brew link --force libxml2 
 brew link --force libxslt
 brew install gettext
 brew link --force gettext
+
+brew install awscli
+brew install terraform@0.11
+ln -s /usr/local/Cellar/terraform@0.11/0.11.14/bin/terraform /usr/local/bin
 
 # docker
 brwe install docker
@@ -43,11 +47,6 @@ source ~/.zshrc
 CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7.11
 pyenv global 2.7.11
 pyenv rehash
-
-# pip
-pip install awscli
-pip install docker-compose
-source ~/.zshrc
 
 # mac appstore
 brew install mas
