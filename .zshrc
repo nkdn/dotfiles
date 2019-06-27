@@ -132,15 +132,11 @@ fi
 
 # Java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+export PATH=${JAVA_HOME}/bin:${PATH}
 
 # android
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
-
-# dinghy
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_CERT_PATH=$HOME/.docker/machine/machines/dinghy
-export DOCKER_TLS_VERIFY=1
-export DOCKER_MACHINE_NAME=dinghy
 
 #-------------------------------------------------
 # Other Setting
