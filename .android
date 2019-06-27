@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# for android
+brew cask install adoptopenjdk8
+touch ~/.android/repositories.cfg
+brew cask install android-sdk
+
+cd ~/Library/Android/sdk/tools/bin && ./sdkmanager --licenses && cd
