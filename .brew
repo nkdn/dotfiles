@@ -31,6 +31,7 @@ gem install cocoapods
 gem install rubocop
 gem install nokogiri -- --use-system-libraries --with-iconv-dir="$(brew --prefix libiconv)" --with-xml2-config="$(brew --prefix libxml2)/bin/xml2-config" --with-xslt-config="$(brew --prefix libxslt)/bin/xslt-config"
 gem install docker-sync
+gem install solargraph
 source ~/.zshrc
 
 # npm
