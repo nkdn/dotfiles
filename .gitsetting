@@ -12,5 +12,5 @@ git config --global alias.gr grep
 cd $(dirname $0)
 
 for file in `\find .gitcommands -maxdepth 1 -type f`; do
-  ln -s $file /usr/local/bin
+  ln -s "$(dirname $0)/$file" /usr/local/bin
 done
