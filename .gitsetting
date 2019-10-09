@@ -8,3 +8,9 @@ git config --global alias.br branch
 git config --global alias.cm commit
 git config --global alias.df diff
 git config --global alias.gr grep
+
+cd $(dirname $0)
+
+for file in `\find .gitcommands -maxdepth 1 -type f`; do
+  ln -s $file /usr/local/bin
+done
