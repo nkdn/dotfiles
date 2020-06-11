@@ -18,7 +18,6 @@ brew install squid
 brew tap stepanhruda/tap
 brew install ios-simulator-app-installer
 
-
 # docker
 brwe install docker
 source ~/.zshrc
