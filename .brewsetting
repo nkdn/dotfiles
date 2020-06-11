@@ -14,6 +14,11 @@ brew install awscli
 brew install terraform@0.11
 ln -s /usr/local/Cellar/terraform@0.11/0.11.14/bin/terraform /usr/local/bin
 
+brew install squid
+brew tap stepanhruda/tap
+brew install ios-simulator-app-installer
+
+
 # docker
 brwe install docker
 source ~/.zshrc
