@@ -52,6 +52,11 @@ CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7.11
 pyenv global 2.7.11
 pyenv rehash
 
+# mint
+brew install mint
+source ~/.zshrc
+mint install toshi0383/xcconfig-extractor
+
 # mac appstore
 brew install mas
 source ~/.zshrc
