@@ -32,9 +32,11 @@ rbenv rehash
 gem install bundler
 gem install cocoapods
 gem install rubocop
+gem install rubocop-rails
 gem install nokogiri -- --use-system-libraries --with-iconv-dir="$(brew --prefix libiconv)" --with-xml2-config="$(brew --prefix libxml2)/bin/xml2-config" --with-xslt-config="$(brew --prefix libxslt)/bin/xslt-config"
 gem install docker-sync
 gem install solargraph
+gem install slim_lint
 source ~/.zshrc
 
 # npm
