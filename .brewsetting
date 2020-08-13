@@ -46,6 +46,7 @@ mkdir -p ~/.nodebrew
 mkdir -p ~/.nodebrew/src
 nodebrew install-binary stable
 nodebrew use stable
+npm i prettier -g
 
 # python
 brew install pyenv
