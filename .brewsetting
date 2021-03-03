@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 brew install openssl git
+brew install circleci
 brew install nkf fontconfig sl watch jq yq fswatch peco
 brew install hub colordiff git-secrets pre-commit
 brew install gpg2
