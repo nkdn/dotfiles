@@ -53,7 +53,7 @@ source ~/.zshrc
 required sudo
 
 ```bash
-brew cask install karabiner-elements
+brew install --cask karabiner-elements
 mkdir -p ~/.config/karabiner
 cp ~/.dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 ```
