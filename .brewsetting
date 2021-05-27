@@ -5,17 +5,12 @@ brew install circleci
 brew install jmeter
 brew install nkf fontconfig sl watch jq yq fswatch peco
 brew install hub colordiff git-secrets pre-commit
-brew install gpg2
 brew install automake libxml2 libxslt libiconv libtool
 brew link --force libxml2 
 brew link --force libxslt
 brew install gettext
 brew link --force gettext
-
 brew install awscli
-brew install terraform@0.11
-ln -s /usr/local/Cellar/terraform@0.11/0.11.14/bin/terraform /usr/local/bin
-
 brew install squid carthage xcodegen
 
 # docker
@@ -25,8 +20,8 @@ source ~/.zshrc
 # ruby
 brew install rbenv ruby-build
 source ~/.zshrc
-rbenv install 2.4.6
-rbenv global 2.4.6
+rbenv install 2.6.6
+rbenv global 2.6.6
 rbenv rehash
 
 # gem
@@ -52,8 +47,8 @@ npm i prettier -g
 # python
 brew install pyenv
 source ~/.zshrc
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7.11
-pyenv global 2.7.11
+pyenv install -v 3.5.3
+pyenv global 3.5.3
 pyenv rehash
 
 # mint
@@ -65,8 +60,6 @@ mint install toshi0383/xcconfig-extractor
 brew install mas
 source ~/.zshrc
 mas install 539883307 # LINE
-mas install 409183694 # Keynote
-mas install 409203825 # Numbers
 mas install 497799835 # Xcode
 
 source ~/.zshrc
