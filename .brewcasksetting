@@ -17,7 +17,6 @@ brew install --cask android-studio
 brew install --cask sketch
 brew install --cask sketch-toolbox
 brew install --cask zeplin
-brew install --cask background-music
 
 brew install --cask docker
 
