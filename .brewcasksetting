@@ -10,13 +10,8 @@ brew install --cask google-chrome
 brew install --cask slack
 brew install --cask postman
 
-brew install --cask atom
 brew install --cask visual-studio-code
 brew install --cask android-studio
-
-brew install --cask sketch
-brew install --cask sketch-toolbox
-brew install --cask zeplin
 
 brew install --cask docker
 
