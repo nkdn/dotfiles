@@ -10,6 +10,7 @@ brew link --force libxml2
 brew link --force libxslt
 brew install gettext
 brew link --force gettext
+brew install pwgen
 brew install awscli
 brew install squid carthage xcodegen
 
