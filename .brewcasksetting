@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+brew install --cask google-chrome
 brew install --cask google-japanese-ime
 
 brew install --cask iterm2
@@ -7,7 +8,6 @@ brew install --cask sequel-pro
 brew install --cask realm-browser
 brew install --cask shiftit
 
-brew install --cask google-chrome
 brew install --cask slack
 brew install --cask postman
 
@@ -17,4 +17,3 @@ brew install --cask android-studio
 brew install --cask docker
 
 brew install --cask adobe-creative-cloud
-open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
