@@ -53,6 +53,16 @@ pyenv install -v 3.5.3
 pyenv global 3.5.3
 pyenv rehash
 
+# dart
+brew tap dart-lang/dart
+brew install dart
+
+# fvm
+dart pub global activate fvm
+source ~/.zshrc
+fvm install 2.5.2
+fvm use 2.5.2
+
 # mint
 brew install mint
 source ~/.zshrc
