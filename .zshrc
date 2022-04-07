@@ -141,6 +141,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# fmv
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 #-------------------------------------------------
 # Other Setting
 #-------------------------------------------------
