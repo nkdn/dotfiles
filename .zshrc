@@ -132,8 +132,12 @@ fi
 
 # Java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-export PATH=${JAVA_HOME}/bin:${PATH}
+# export JAVA_HOME=`/usr/libexec/java_home -v "1.7"`
+# export PATH=${JAVA_HOME}/bin:${PATH}
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+export PATH=$PATH:/Applications/"Android Studio.app"/Contents/jre/Contents/Home/bin
+export JAVA_HOME=/Applications/"Android Studio.app"/Contents/jre/Contents/Home
 
 # android
 export ANDROID_HOME=$HOME/Library/Android/sdk
